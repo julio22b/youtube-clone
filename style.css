@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 9vh;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  background: white;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+header nav .first button {
+  background-image: url(./assets/imgs/iconmonstr-menu-1-48.png);
+  background-size: 100% 100%;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  margin-right: 3em;
+  border: none;
+}
+
+header nav .second {
+  height: 50%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav .second .search-bar {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cccccc;
+  padding: 0.5em 1em;
+}
+
+header nav .second button {
+  background-image: url(./assets/imgs/iconmonstr-magnifier-6-32.png);
+  background-repeat: no-repeat;
+  background-size: 30% 50%;
+  background-position: center;
+  height: 100%;
+  width: 10%;
+  border: none;
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  border-left: none;
+}
+
+header nav .third {
+  height: 100%;
+  margin-left: 2em;
+}
+
+header nav .third ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  height: 100%;
+}
+
+header nav .third ul li {
+  margin-right: 2em;
+  height: 30%;
+}
+
+header nav .third ul li img {
+  height: 100%;
+}
+
+header nav .third ul li:nth-child(4) {
+  margin-right: 0;
+  height: 50%;
+}
+
+header nav .third ul li:nth-child(4) img {
+  border-radius: 50% 50%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: #f9f9f9;
+  padding-top: 2em;
+}
+
+main .video-and-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding: 0 1.5em;
+}
+
+main .video-and-comments .video-container p {
+  width: 90%;
+  margin: 0.8em 0;
+  font-weight: 500;
+}
+
+main .video-and-comments .video-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+main .video-and-comments .video-container div span {
+  color: #757575;
+  padding-bottom: 1em;
+}
+
+main .video-and-comments .video-container div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  color: #757575;
+  font-weight: bold;
+}
+
+main .video-and-comments .video-container div ul li {
+  padding: 0 1em;
+  padding-bottom: 1em;
+}
+
+main .video-and-comments .video-container div ul li:nth-child(1), main .video-and-comments .video-container div ul li:nth-child(2) {
+  border-bottom: 3px solid #757575;
+}
+
+main .video-and-comments .channel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+main .video-and-comments .channel-info div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 1em;
+  width: 5%;
+}
+
+main .video-and-comments .channel-info div:nth-child(1) img {
+  border-radius: 50%;
+}
+
+main .video-and-comments .channel-info div:nth-child(2) {
+  width: 60%;
+}
+
+main .video-and-comments .channel-info div:nth-child(2) p:nth-child(1) {
+  font-weight: bold;
+}
+
+main .video-and-comments .channel-info div:nth-child(2) p:nth-child(2) {
+  color: #757575;
+  font-size: 0.8rem;
+  margin-bottom: 1.5em;
+}
+
+main .video-and-comments .channel-info div:nth-child(2) p:nth-child(4) {
+  color: #757575;
+  font-size: 0.8rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+main .video-and-comments .channel-info button {
+  position: absolute;
+  right: 0;
+  background-color: #cc0000;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.6em 0.8em;
+}
+
+main .video-and-comments .comments p:nth-child(1) {
+  margin: 1.5em 0;
+}
+
+main .video-and-comments .comments .comment-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+}
+
+main .video-and-comments .comments .comment-input img {
+  border-radius: 50%;
+  height: 50%;
+  width: 5%;
+}
+
+main .video-and-comments .comments .comment-input input {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5em 0.5em;
+}
+
+main .video-and-comments .comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 1em 0;
+}
+
+main .video-and-comments .comments .comment div:nth-child(1) {
+  width: 5%;
+}
+
+main .video-and-comments .comments .comment div:nth-child(1) img {
+  border-radius: 50%;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) {
+  width: 93%;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) h5 {
+  margin-bottom: 0.8em;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) h5 span {
+  font-weight: normal;
+  color: #757575;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) p {
+  margin-bottom: 0.8em;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.8em;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) div img {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) div span {
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) div .reply {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) .reply {
+  color: #757575;
+}
+
+main .video-and-comments .comments .comment div:nth-child(2) p:last-child {
+  color: #065fd6;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

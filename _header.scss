@@ -1,0 +1,73 @@
+header {
+    height: 9vh;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    background: white;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        .first {
+            @include flexCenter(row);
+            height: 100%;
+            button {
+                background-image: url(./assets/imgs/iconmonstr-menu-1-48.png);
+                background-size: 100% 100%;
+                background-color: transparent;
+                width: 20px;
+                height: 20px;
+                margin-right: 3em;
+                border: none;
+            }
+        }
+        .second {
+            height: 50%;
+            width: 40%;
+            display: flex;
+            @include flexCenter(row);
+            .search-bar {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #cccccc;
+                padding: 0.5em 1em;
+            }
+            button {
+                background-image: url(./assets/imgs/iconmonstr-magnifier-6-32.png);
+                background-repeat: no-repeat;
+                background-size: 30% 50%;
+                background-position: center;
+                height: 100%;
+                width: 10%;
+                border: none;
+                background-color: #f8f8f8;
+                border: 1px solid #cccccc;
+                border-left: none;
+            }
+        }
+        .third {
+            height: 100%;
+            margin-left: 2em;
+            ul {
+                @include flexCenter(row);
+                list-style: none;
+                height: 100%;
+                li {
+                    margin-right: 2em;
+                    height: 30%;
+                    img {
+                        height: 100%;
+                    }
+                    &:nth-child(4) {
+                        margin-right: 0;
+                        height: 50%;
+                    }
+                    &:nth-child(4) img {
+                        border-radius: 50% 50%;
+                    }
+                }
+            }
+        }
+    }
+}

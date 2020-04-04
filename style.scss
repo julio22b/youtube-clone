@@ -1,0 +1,183 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './header';
+
+main {
+    @include flexCenter(row);
+    justify-content: start;
+    background-color: #f9f9f9;
+    padding-top: 2em;
+
+    .video-and-comments {
+        @include flexCenter(column);
+        flex-basis: 70%;
+        padding: 0 1.5em;
+
+        .video-container {
+            p {
+                width: 90%;
+                margin: 0.8em 0;
+                font-weight: 500;
+            }
+
+            div {
+                @include flexCenter(row);
+                justify-content: space-between;
+                border-bottom: 1px solid #e0e0e0;
+
+                span {
+                    color: #757575;
+                    padding-bottom: 1em;
+                }
+
+                ul {
+                    @include flexCenter(row);
+                    list-style: none;
+                    color: #757575;
+                    font-weight: bold;
+
+                    li {
+                        padding: 0 1em;
+                        padding-bottom: 1em;
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            border-bottom: 3px solid #757575;
+                        }
+                    }
+                }
+            }
+        }
+        .channel-info {
+            @include flexCenter(row);
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1.5em 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+
+            div:nth-child(1) {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin-right: 1em;
+                width: 5%;
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            div:nth-child(2) {
+                width: 60%;
+                p:nth-child(1) {
+                    font-weight: bold;
+                }
+                p:nth-child(2) {
+                    color: #757575;
+                    font-size: 0.8rem;
+                    margin-bottom: 1.5em;
+                }
+                p:nth-child(4) {
+                    color: #757575;
+                    font-size: 0.8rem;
+                    margin-top: 1em;
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                background-color: #cc0000;
+                border: none;
+                color: white;
+                font-size: 1.1rem;
+                padding: 0.6em 0.8em;
+            }
+        }
+
+        .comments {
+            p:nth-child(1) {
+                margin: 1.5em 0;
+            }
+            .comment-input {
+                @include flexCenter(row);
+                margin-bottom: 1em;
+                img {
+                    border-radius: 50%;
+                    height: 50%;
+                    width: 5%;
+                }
+                input {
+                    width: 95%;
+                    border: none;
+                    border-bottom: 1px solid #e0e0e0;
+                    padding: 0.5em 0.5em;
+                }
+            }
+            .comment {
+                @include flexCenter(row);
+                justify-content: space-between;
+                align-items: stretch;
+                padding: 1em 0;
+                div:nth-child(1) {
+                    width: 5%;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+                div:nth-child(2) {
+                    width: 93%;
+                    h5 {
+                        margin-bottom: 0.8em;
+                        span {
+                            font-weight: normal;
+                            color: #757575;
+                        }
+                    }
+                    p {
+                        margin-bottom: 0.8em;
+                    }
+                    div {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-bottom: 0.8em;
+                        img {
+                            height: 18px;
+                            width: 18px;
+                            margin-right: 10px;
+                        }
+                        span {
+                            margin-right: 20px;
+                            font-size: 0.8rem;
+                        }
+                        .reply {
+                            font-weight: bold;
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .reply {
+                        color: #757575;
+                    }
+                    p:last-child {
+                        color: #065fd6;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
