@@ -27,12 +27,25 @@ main {
         padding: 0 1.5em;
 
         .video-container {
+            width: 100%;
             p {
                 width: 90%;
                 margin: 0.8em 0;
                 font-weight: 500;
             }
-
+            .iframe-con {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%;
+                .video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             div {
                 @include flexCenter(row);
                 justify-content: space-between;
@@ -233,9 +246,10 @@ main {
             margin: 1em 0;
             div:first-child {
                 position: relative;
-                background-image: url(/assets/imgs/iconmonstr-picture-thin.svg);
+                background-image: url(./assets/imgs/iconmonstr-picture-thin.svg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% 115%;
+                background-position: center;
                 width: 40%;
                 span {
                     position: absolute;
